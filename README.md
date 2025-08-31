@@ -11,6 +11,6 @@ The main script is Code_macaque_survey.R, which uses the data from:
 Within the main script, the following functions are sourced to conduct power and sample size sensitivity analyses:
 
 - ModifiedHT_power_analysis.R (power analysis with the modified Horvitz-Thompson estimator)
-- ModifiedHT_SS_analysis.R (sample size sensitivity analysis with the modified Horvitz-Thompson estiamtor)
+- ModifiedHT_SS_analysis.R (sample size sensitivity analysis with the modified Horvitz-Thompson estimator)
 - NMix_power_analysis.R (power analysis with the N-mixture models)
 - NMix_SS_analysis.R (sample size sensitivity analysis with the N-mixture models)
