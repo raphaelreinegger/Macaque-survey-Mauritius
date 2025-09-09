@@ -46,13 +46,13 @@ library(openxlsx)
 #######################################################
 #######################################################
 ## attach data 
-siteCovs <- read.csv("siteCovs_submission.csv",na.strings=c("", "NA"),header=T,sep=",") #'_adjust' dataset leaves out messy repeat flights
+siteCovs <- read.csv("siteCovs_submission.csv",na.strings=c("", "NA"),header=T,sep=",") 
 obsCovs <- read.csv("obsCovs_submission.csv",na.strings=c("", "NA"),header=T,sep=",")
 siteCovs$Length_edge <- siteCovs$Length_agri.edge_within610m
 siteCovs$Length_rivers <- siteCovs$Length_rivers__within610m
 attach(siteCovs)
 z <- cbind(Max.abundance, Length_edge, Dist_agriculture, Dist_river, Length_rivers, Dist_roads, Elev_mean, Scrub_frac,Cap.y.km2,Dist_chass)
-#now quick visualisation of relationships between variables, no need to add mean_cap as it has perfect correlation with capture_6y
+#now quick visualisation of relationships between variables
 pairs(z, lower.panel = panel.smooth2,upper.panel = panel.cor, diag.panel = panel.hist)
 #check multicollinearity
 corvif(z) #highest vif values are elev_mean and Scrub_frac because they are highly correlated
