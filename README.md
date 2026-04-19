@@ -14,3 +14,6 @@ Within the main script, the following functions are sourced to conduct power and
 - ModifiedHT_SS_analysis.R (sample size sensitivity analysis with the modified Horvitz-Thompson estimator)
 - NMix_power_analysis.R (power analysis with the N-mixture models)
 - NMix_SS_analysis.R (sample size sensitivity analysis with the N-mixture models)
+
+The MaxEnt code to produce the binary habitat maps can be found in:
+- MaxEnt_macaque.R
